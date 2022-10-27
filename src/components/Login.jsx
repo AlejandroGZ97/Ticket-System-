@@ -30,11 +30,11 @@ export const Login =() =>{
     return(
         <>
             {succes ? (
-                <section>
-                    <h1>Haz ingresado</h1>
+                <section className="box-body">
+                    <h1 className="body-titulo">Haz ingresado</h1>
                     <br/>
                     <p>
-                        <a href="#">Inicio</a>
+                        <a>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem et molestiae officiis ea repellendus reprehenderit quos dolore quidem sapiente quaerat labore qui quam eligendi, rerum ipsam! Suscipit nostrum provident excepturi?</a>
                     </p>
                 </section>
             ) : (
