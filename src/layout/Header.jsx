@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {MenuItems} from "./MenuItems";
 import {Button} from "../components/Button";
 import {Nosotros} from "../components/Nosotros";
-import logovware from "../images/logo-vware.png";
+import logovware from "../images/spain-flag.png";
 
 import './Header.css';
 
@@ -15,25 +15,19 @@ class Header extends Component{
   }
 
   render(){
+    const MenuItem = MenuItems[0]
     return(
       <nav className='HeaderItems'>
-        <h1 className="header-logo"><img src={logovware}></img></h1>
-        <div className='menu-icon' onClick={this.handleClick}>
-          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-
+          
+        <div>
+          <a className={MenuItem.cName} href={MenuItem.url}>
+            {MenuItem.tittle}
+          </a>
         </div>
-        <ul className='header-menu'>
-            {MenuItems.map((item, index) =>{
-              return(
-                <li key = {index}>
-                  <a className={item.cName} href={item.url}>
-                  {item.tittle}
-                  </a>      
-                </li>
-              )
-            })}
-        </ul>
-      <Button onClick={this.handleClick}>Nosotros</Button>
+        
+        <div className='header-menu'>
+          <h1 className="header-logo"><img src={logovware} height="18" width="25"></img></h1>
+        </div>
       </nav>
     )
   }

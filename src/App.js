@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from'./layout/Header';
-import Nosotros from'./components/Nosotros';
+import Login from'./components/Login';
+import Footer from './layout/Footer'
 import './App.css'
 
 
@@ -10,8 +11,9 @@ function App() {
     <>
     <Header/>
     <body>
-    <Nosotros/>
+    <Login/>
     </body>
+    <Footer/>
     </>
   );
 }

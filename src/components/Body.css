@@ -1,4 +1,4 @@
-.box-nosotros{
+.box-body{
     
     max-width: 1200px;
     width:100%;
@@ -10,21 +10,28 @@
     right: 0;
     left: 0;
     top: 30px;
-    bottom: 0;
-   
-
-
-   
-    
+    bottom: 0; 
 }
 
-.nosotros-titulo{
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.body-titulo{
     padding: 20px;
     font-size: 30px;
     text-align: center;
 }
-.nosotros-titulo:hover{
+
+.body-login{
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.body-login:hover{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
     transition: all 0.2s ease-in;
 }

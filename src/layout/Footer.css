@@ -1,21 +1,12 @@
-.HeaderItems{
-    background-color: rgb(54, 54, 54);
-    height: 40px;
+.FooterItems{
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content:center;
     font-size: 1.2 rem;
 }
 
-.header-logo{
-    color:white;
-    justify-self: start;
-    margin-left: 0.5rem;
-    font-size: 1.2rem;
-    cursor:pointer;
-}
-
-.header-menu{
+.footer-menu{
     display: grid;
     grid-template-columns: repeat(2,auto);
     grid-gap: 10px;
@@ -26,18 +17,18 @@
     margin-left : 2rem;
 }
 
-.header-links{
+.footer-links{
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
-.header-links:hover{
+.footer-links:hover{
     background-color: #5a6579;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
 
-.header-links-mobile{
+.footer-links-mobile{
     display:none;
 }
