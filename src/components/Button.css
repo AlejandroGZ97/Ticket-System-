@@ -1,5 +1,5 @@
 :root{
-    --primary:#77DD77;
+    --primary:red;
 }
 
 .btn{
@@ -14,7 +14,7 @@
     padding: 8px 20px;
     transition: all 0.3s ease-out;
     background-color: #fff;
-    color: #77DD77;
+    color: red;
     transition: 250ms;
 
 }

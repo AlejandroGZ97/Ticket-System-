@@ -14,7 +14,7 @@ function App() {
     <>
     <Header/>
     <body>
-    <Nosotros/>
+    <Usuario/>
     </body>
     <Footer/>
     </>

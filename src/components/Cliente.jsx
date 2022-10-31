@@ -1,15 +1,16 @@
 import React from "react"
-import'./Body.css';
+import photo from "../images/empty.png";
+import'./UsersBox.css';
 
 
 export const Cliente =() =>{
 
     return(
-        <div className="box-body">
-            <ul>
-                <a href='#'>Crear Ticket</a> <br />
-                <a href='#'>Ver Ticket</a> <br />
-                <a href='#'>Modificar Datos</a>
+        <div >
+            <ul className="customer-box">
+                <ul className="crear" href='#'><img src={photo} height="100" width="100"/><h1>Crear Ticket</h1> <button className="btn-grey">Crear Ticket</button></ul>
+                <ul className="ver" href='#'><img src={photo} height="100" width="100"/><h1>Ver Ticket</h1><button className="btn-grey">Ver Ticket</button></ul>
+                <ul className="modificar" href='#'><img src={photo} height="100" width="100"/><h1>Modificar Datos</h1><button className="btn-grey">Modificar Ticket</button></ul>
             </ul>
         </div>
     )

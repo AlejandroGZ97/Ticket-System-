@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { useRef, useState, useEffect } from 'react'
 import'./Body.css';
 
@@ -64,7 +64,7 @@ export const Login =() =>{
                     required
                 />
                 <br/>
-                <button>Iniciar</button>
+                <button className="btn">Iniciar Sesion</button>
             </form>
         </section>
         )}

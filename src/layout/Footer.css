@@ -18,17 +18,13 @@
 }
 
 .footer-links{
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    border-top: 1px;
+    list-style: none;
+    width: 100%;
 }
 
 .footer-links:hover{
-    background-color: #5a6579;
+    background-color: rgb(172, 115, 115);
     border-radius: 4px;
     transition: all 0.2s ease-out;
-}
-
-.footer-links-mobile{
-    display:none;
 }

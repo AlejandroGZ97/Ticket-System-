@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {MenuItems} from "./MenuItems";
 import {Button} from "../components/Button";
-import {Nosotros} from "../components/Nosotros";
 import logolinkedin from "../images/linkedin-logo.png";
 import logoface from "../images/facebook-logo.png";
 
@@ -16,28 +15,21 @@ class Footer extends Component{
   }
 
   render(){
-    const MenuItem = MenuItems[0]
+    const MenuItem = MenuItems[1].cName
     return(
       <nav className='FooterItems'>
-
         <div>
-            <ul>
-                <li><a href="https://www.facebook.com/VwareSolutions">
-                        <img src={logoface} height="20" width="22" />
-                    </a>
-                </li>
-                <li><a href="https://mx.linkedin.com/">
-                        <img src={logolinkedin} height="20" width="20" />
-                    </a>
-                </li>
-            </ul>
+              <ul>
+                <li className='footer-links'><a href="https://www.facebook.com/VwareSolutions">
+                  <img src={logoface} height="20" width="22" /></a></li>
+                <li className='footer-links'><a href="https://mx.linkedin.com/">
+                  <img src={logolinkedin} height="20" width="20" /></a></li>
+              </ul>
         </div>
+        <div className='footer-menu'></div>
 
-        <div className='footer-menu'>
-          <h1 className="footer-logo"></h1>
-        </div>
+        <a href={MenuItem}><Button onClick={this.handleClick}>Nosotros</Button></a>
         
-      <Button onClick={this.handleClick}>Nosotros</Button>
       </nav>
     )
   }

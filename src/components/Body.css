@@ -1,6 +1,6 @@
 .box-body{
     
-    max-width: 1200px;
+    max-width: 400px;
     width:100%;
     margin:auto;
     height: 65vh;
@@ -9,7 +9,7 @@
     position:relative;
     right: 0;
     left: 0;
-    top: 30px;
+    top: 60px;
     bottom: 0; 
 }
 
@@ -26,12 +26,30 @@
 
 .body-login{
     padding: 30px;
-    font-size: 15px;
+    font-size: 30px;
     text-align: center;
 }
 
 .body-login:hover{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     transition: all 0.2s ease-in;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+.btn:hover{
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background-color: #fff;
+    color: red;
+    transition: 250ms;
 }
